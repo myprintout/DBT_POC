@@ -9,7 +9,7 @@ AS (
 	SELECT scus.customer_id,
 		scus.store_id,
 		scus.first_name,
-		scus.last_name,
+		scus.last_name as L_N,
 		scus.email,
 		scus.active,
 		scus.create_date,
@@ -30,7 +30,7 @@ renamed
 AS (
 	SELECT customer_id,
 		first_name AS customer_first_name,
-		last_name AS customer_last_name,
+		L_N AS customer_last_name_LLLL,
 		email AS customer_email,
 		active AS customer_active,
 		create_date AS customer_created,
